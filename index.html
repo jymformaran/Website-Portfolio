@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- =========================================================================== -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<!-- ================= LOADING SCREEN ================= -->
+    <div id="loader">
+        <video class="loader-video" autoplay muted loop playsinline preload="auto">
+            <source src="VBG2.mp4" type="video/mp4">
+        </video>
+        <div class="loader-overlay"></div>
+        <div class="loader-panel">
+            <h1>=== CYBERNET ===</h1>
+            <p class="loader-status">
+                    CONNECTING TO NETWORK
+            </p>
+            <div class="progress-container">
+                <div class="progress-fill"></div>
+            </div>
+            <p id="loading-text">
+                Initializing systems...
+            </p>
+        </div>
+    </div>
+    <body>
+    <!-- =========================================================================== -->
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="VBG1.mp4" type="video/mp4">
+    </video>
+    
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <header class="header">
+        <a href="#mainmenu" class="logo">
+            Joel /<Span>/ Archives</Span></a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <!-- ================================================ -->
+        <nav class="navbar">
+            <a href="#mainmenu">MAIN MENU</a>
+            <a href="#characterprofile">ABOUT</a>
+            <a href="#ssts">STATS</a>
+            <a href="#projects">QUEST LOG</a>
+            <a href="#achievements">RECORDS</a>    
+            <a href="#contact"><button class="cyber-btn">Connect</button></a>
+        </nav>
+        <!-- ================================================ -->
+    </header>
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <section class="mainmenu" id="mainmenu">
+        <div class="mainmenu-content">
+            <h2>WELCOME,</h2>
+            <h1>PLAYER 1</h1>
+            <!-- =========================================================================== -->
+            <div class="character-status">
+                <div class="status-item">
+                    <i class='bx bx-pulse'></i>
+                    <span>STATUS:</span> Online
+                </div>
+                <!-- ================================================ -->
+                <div class="status-item">
+                    <i class='bx bx-user'></i>
+                    <span>NAME:</span> Joel Ymanuel Formaran
+                </div>
+                <!-- ================================================ -->
+                <div class="status-item">
+                    <i class='bx bx-trending-up'></i>
+                    <span>LEVEL:</span> 25
+                </div>
+                <!-- ================================================ -->
+                <div class="status-item">
+                    <i class='bx bx-map'></i>
+                    <span>LOCATION:</span> Metro Manila, Philippines
+                </div>
+                <!-- ================================================ -->
+                <div class="status-item">
+                    <i class='bx bx-shield-quarter'></i>
+                    <span>REPUTATION:</span> Rising
+                </div>
+            </div>
+            <!-- =========================================================================== -->
+            <div class="social-icons">
+                <a href="https://github.com/jymformaran"><i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/joel-ymanuel-formaran-374206404"><i class="bx bxl-linkedin-square"></i></a>
+                <a href="https://www.instagram.com/jyyyole/"><i class="bx bxl-instagram"></i></a>
+            </div>
+            <!-- ================================================ -->
+            <div class="btn-group">
+                <a href="resume.pdf" download class="btn"><i class="bx bx-download"></i> RESUME</a>
+                <a href="#contact" class="btn"><i class="bx bx-envelope"></i> OPEN COMMS</a>
+            </div>
+    </section>
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <section class="characterprofile" id="characterprofile">
+        <div class="charprof-img">
+            <img src="image/img1c.png" alt="charprofimage">
+        </div>
+        <!-- ================================================ -->
+        <div class="charprof-content">
+        <h1>AGENT PROFILE</h1>
+        <p>I'm Joel, a Computer Engineering Technology graduate who enjoys building practical software and embedded systems. My interests span web development, desktop applications, mobile apps, and hardware projects. I like turning ideas into working products while continuously improving my programming and problem-solving skills. I'm currently seeking opportunities where I can contribute, learn from experienced engineers and developers, and grow professionally.</p>
+        </div>
+        <!-- =========================================================================== -->
+    </section>
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <section class="ssts" id="ssts">
+        <div class="sns">
+            <div class="skills-content">
+                <h1>SKILLS</h1>
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="skills-list">
+                            <!-- ================================================ -->
+                            <div class="skills-box">
+                                <div class="skill-top">
+                                    <span>PYTHON</span><p>  90%</p></div>
+                                <div class="progress-bar">
+                                    <div class="progress python"></div>
+                                </div>
+                            </div>
+                            <!-- ================================================ -->
+                            <div class="skills-box">
+                                <div class="skill-top">
+                                    <span>DJANGO</span><p>88%</p>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress django"></div>
+                                </div>
+                            </div>
+                            <!-- ================================================ -->
+                            <div class="skills-box">
+                                <div class="skill-top">
+                                    <span>MYSQL</span><p>85%</p>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress mysql"></div>
+                                </div>
+                            </div>
+                            <!-- ================================================ -->
+                            <div class="skills-box">
+                                <div class="skill-top">
+                                    <span>HTML / CSS</span><p>90%</p>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress html"></div>
+                                </div>
+                            </div>
+                            <!-- ================================================ -->
+                            <div class="skills-box">
+                                <div class="skill-top">
+                                    <span>JAVASCRIPT</span><p>75%</p>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress js"></div>
+                                </div>
+                            </div>
+                            <!-- ================================================ -->
+                            <div class="skills-box">
+                                <div class="skill-top">
+                                    <span>GIT / GITHUB</span><p>80%</p>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress git"></div>
+                                </div>
+                            </div>
+                            <!-- ================================================ -->
+                        </div>
+                    </div>
+                    <div class="panel-image">
+                        <img src="Image/skillimage.png" alt="skillimage">
+                    </div>
+                </div>
+            </div>
+            <!-- =========================================================================== -->
+            <div class="stats-content">
+                <h1>STATS OVERVIEW</h1>
+                <div class="panel">
+                    <div class="panel-image2">
+                        <img src="Image/statimage.png" alt="statimage">
+                    </div>
+                    <div class="panel-body2">
+                        <div class="stats-list">
+
+                            <!-- ================================================ -->
+                            <div class="stats-box">
+                                <i class='bx bx-code-alt coding-icon'></i>
+                                <span>CODING</span>
+                                <p>90</p>
+                            </div>
+
+                            <!-- ================================================ -->
+                            <div class="stats-box">
+                                <i class='bx bx-brain problem-icon'></i>
+                                <span>PROBLEM SOLVING</span>
+                                <p>88</p>
+                            </div>
+
+                            <!-- ================================================ -->
+                            <div class="stats-box">
+                                <i class='bx bx-bug debug-icon'></i>
+                                <span>DEBUGGING</span>
+                                <p>85</p>
+                            </div>
+
+                            <!-- ================================================ -->
+                            <div class="stats-box">
+                                <i class='bx bx-refresh adaptability-icon'></i>
+                                <span>ADAPTABILITY</span>
+                                <p>88</p>
+                            </div>
+
+                            <!-- ================================================ -->
+                            <div class="stats-box">
+                                <i class='bx bx-group teamwork-icon'></i>
+                                <span>TEAMWORK</span>
+                                <p>95</p>
+                            </div>
+
+                            <!-- ================================================ -->
+                            <div class="stats-box">
+                                <i class='bx bx-palette creativity-icon'></i>
+                                <span>CREATIVITY</span>
+                                <p>99</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
+            <!-- =========================================================================== -->
+        <div class="techstack">
+            <div class="techs-content">
+                <h1>TECH STACK</h1>
+                <div class="tech-stack-grid">
+                    <div class="tech-card"><i class="bx bxl-python"></i><p>Python</p></div>
+                    <div class="tech-card"><i class="bx bx-code-alt"></i><p>Django</p></div>
+                    <div class="tech-card"><i class="bx bxl-css3"></i><p>CSS3</p></div>
+                    <div class="tech-card"><i class="bx bxl-bootstrap"></i><p>Bootstrap</p></div>
+                    <div class="tech-card"><i class="bx bx-data"></i><p>MySQL</p></div>
+                    <div class="tech-card"><i class="bx bxl-javascript"></i><p>JavaScript</p></div>
+                    <div class="tech-card"><i class="bx bxl-git"></i><p>Git</p></div>
+                    <div class="tech-card"><i class="bx bxl-github"></i><p>GitHub</p></div>
+                    <div class="tech-card"><i class="bx bxl-html5"></i><p>HTML5</p></div>
+                    <div class="tech-card"><i class="bx bx-code-block"></i><p>VS Code</p></div>
+                    
+                    <div class="tech-card"><i class="bx bxl-python"></i><p>Python</p></div>
+                    <div class="tech-card"><i class="bx bx-code-alt"></i><p>Django</p></div>
+                    <div class="tech-card"><i class="bx bxl-css3"></i><p>CSS3</p></div>
+                    <div class="tech-card"><i class="bx bxl-bootstrap"></i><p>Bootstrap</p></div>
+                    <div class="tech-card"><i class="bx bx-data"></i><p>MySQL</p></div>
+                    <div class="tech-card"><i class="bx bxl-javascript"></i><p>JavaScript</p></div>
+                    <div class="tech-card"><i class="bx bxl-git"></i><p>Git</p></div>
+                    <div class="tech-card"><i class="bx bxl-github"></i><p>GitHub</p></div>
+                    <div class="tech-card"><i class="bx bxl-html5"></i><p>HTML5</p></div>
+                    <div class="tech-card"><i class="bx bx-code-block"></i><p>VS Code</p></div>
+                </div>
+            </div>
+        </div>
+            <!-- =========================================================================== -->
+    </section>
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <section class="projects" id="projects">
+        <h2>QUEST LOG</h2>
+        <div class="project-box">
+            <div class="projects-track">
+                <!-- ================================================ -->
+                <div class="project-card">
+                    <img src="image/project1.png" alt="project1">
+                    <h3>School Supplies Vending Machine</h3>
+                    <div class="lang">
+                        <div class="language">
+                            <span>Arduino Mega</span>
+                            <span>PHP</span>
+                            <span>ESP32</span>
+                            <span>CSS</span>  
+                            <span>C/C++</span>
+                            <span>HTML</span>
+                            <span>MySql</span>
+                        </div>
+                    </div>
+                    <p>An automated vending machine that dispenses school supplies through a touchscreen interface with real-time inventory monitoring. It has an embedded system to provide a smart and efficient user experience.</p>
+                    <a href="project1.html"><button class="cyber-btn">View Quest</button></a>
+                </div>
+                <!-- ================================================ -->
+                <div class="project-card">
+                    <img src="image/project2.png" alt="project2">
+                    <h3>Smart Vee - Simple Math Quiz Bee (Mobile App)</h3>
+                    <div class="lang">
+                        <div class="language">
+                            <span>Android Studio</span>
+                            <span>Firebase</span>
+                            <span>Kotlin</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                    <p>A mobile application that offers timed mathematics quizzes in an engaging and user-friendly environment. Firebase integration enables secure user management.</p>
+                    <a href="project2.html"><button class="cyber-btn">View Quest</button></a>
+                </div>
+                <!-- ================================================ -->
+                <div class="project-card">
+                    <img src="image/project3.png" alt="project3">
+                    <h3>Arduinno-Based Wireless Control Car</h3>
+                    <div class="lang">
+                        <div class="language">
+                            <span>Arduino Uno</span>
+                            <span>Bluetooth</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                    <p>A Bluetooth-controlled RC car built using Arduino Uno and wireless communication technology. The project demonstrates embedded programming, motor control, and hardware integration.</p>
+                    <a href="project3.html"><button class="cyber-btn">View Quest</button></a>
+                </div>
+                <!-- ================================================ -->
+                <div class="project-card">
+                    <img src="image/project4.png" alt="project4">
+                    <h3>A.C.T.S. School Organization Portal</h3>
+                    <div class="lang">
+                        <div class="language">
+                            <span>CSS</span>
+                            <span>Javascript</span>
+                            <span>MySQL</span>
+                            <span>HTML</span>
+                            <span>Bootstrap</span>
+                            <span>Django</span>
+                            
+                        </div>
+                    </div>
+                    <p>A responsive web portal developed for the ACTS organization with authentication, profile management, and CRUD functionality. It showcases full-stack development using Django, MySQL, and modern web technologies.</p>
+                    <a href="project4.html"><button class="cyber-btn">View Quest</button></a>
+                </div>
+                <!-- ================================================ -->
+                <div class="project-card">
+                    <img src="image/project5.png" alt="project5">
+                    <h3>Student-Membership Management System</h3>
+                    <div class="lang">
+                        <div class="language">
+                            <span>Tkinter</span>
+                            <span>Python</span>
+                            <span>MySQL</span>
+                            <span>PyQt</span>
+                        </div>
+                    </div>
+                    <p>A desktop application designed to manage organization membership records through an intuitive graphical interface. It supports registration, searching, updating, and database-driven record management.</p>
+                    <a href="project5.html"><button class="cyber-btn">View Quest</button></a>
+                </div>
+                <!-- ================================================ -->
+                <div class="project-card">
+                    <img src="image/project6.png" alt="project6">
+                    <h3>LoL Champion Showcase Website</h3>
+                    <div class="lang">
+                        <div class="language">
+                            <span>Javascript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <p>An interactive website featuring champion profiles, responsive design, and multimedia elements inspired by League of Legends. The project highlights front-end development skills using HTML, CSS, and JavaScript.</p>
+                    <a href="project6.html"><button class="cyber-btn">View Quest</button></a>
+                </div>
+                <!-- ================================================ -->
+
+                <!-- ================================================ -->
+                <div class="project-card">
+                    <img src="image/project1.png" alt="project1">
+                    <h3>School Supplies Vending Machine</h3>
+                    <div class="lang">
+                        <div class="language">
+                            <span>Arduino Mega</span>
+                            <span>PHP</span>
+                            <span>ESP32</span>
+                            <span>CSS</span>  
+                            <span>C/C++</span>
+                            <span>HTML</span>
+                            <span>MySql</span>
+                        </div>
+                    </div>
+                    <p>An automated vending machine that dispenses school supplies through a touchscreen interface with real-time inventory monitoring. It has an embedded system to provide a smart and efficient user experience.</p>
+                    <a href="project1.html"><button class="cyber-btn">View Quest</button></a>
+                </div>
+                <!-- ================================================ -->
+                <div class="project-card">
+                    <img src="image/project2.png" alt="project2">
+                    <h3>Smart Vee - Simple Math Quiz Bee (Mobile App)</h3>
+                    <div class="lang">
+                        <div class="language">
+                            <span>Android Studio</span>
+                            <span>Firebase</span>
+                            <span>Kotlin</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                    <p>A mobile application that offers timed mathematics quizzes in an engaging and user-friendly environment. Firebase integration enables secure user management.</p>
+                    <a href="project2.html"><button class="cyber-btn">View Quest</button></a>
+                </div>
+                <!-- ================================================ -->
+                <div class="project-card">
+                    <img src="image/project3.png" alt="project3">
+                    <h3>Arduinno-Based Wireless Control Car</h3>
+                    <div class="lang">
+                        <div class="language">
+                            <span>Arduino Uno</span>
+                            <span>Bluetooth</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                    <p>A Bluetooth-controlled RC car built using Arduino Uno and wireless communication technology. The project demonstrates embedded programming, motor control, and hardware integration.</p>
+                    <a href="project3.html"><button class="cyber-btn">View Quest</button></a>
+                </div>
+                <!-- ================================================ -->
+                <div class="project-card">
+                    <img src="image/project4.png" alt="project4">
+                    <h3>A.C.T.S. School Organization Portal</h3>
+                    <div class="lang">
+                        <div class="language">
+                            <span>CSS</span>
+                            <span>Javascript</span>
+                            <span>MySQL</span>
+                            <span>HTML</span>
+                            <span>Bootstrap</span>
+                            <span>Django</span>
+                            
+                        </div>
+                    </div>
+                    <p>A responsive web portal developed for the ACTS organization with authentication, profile management, and CRUD functionality. It showcases full-stack development using Django, MySQL, and modern web technologies.</p>
+                    <a href="project4.html"><button class="cyber-btn">View Quest</button></a>
+                </div>
+                <!-- ================================================ -->
+                <div class="project-card">
+                    <img src="image/project5.png" alt="project5">
+                    <h3>Student-Membership Management System</h3>
+                    <div class="lang">
+                        <div class="language">
+                            <span>Tkinter</span>
+                            <span>Python</span>
+                            <span>MySQL</span>
+                            <span>PyQt</span>
+                        </div>
+                    </div>
+                    <p>A desktop application designed to manage organization membership records through an intuitive graphical interface. It supports registration, searching, updating, and database-driven record management.</p>
+                    <a href="project5.html"><button class="cyber-btn">View Quest</button></a>
+                </div>
+                <!-- ================================================ -->
+                <div class="project-card">
+                    <img src="image/project6.png" alt="project6">
+                    <h3>LoL Champion Showcase Website</h3>
+                    <div class="lang">
+                        <div class="language">
+                            <span>Javascript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <p>An interactive website featuring champion profiles, responsive design, and multimedia elements inspired by League of Legends. The project highlights front-end development skills using HTML, CSS, and JavaScript.</p>
+                    <a href="project6.html"><button class="cyber-btn">View Quest</button></a>
+                </div>
+                <!-- ================================================ -->
+            </div>
+        </div>
+    </section>
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <section class="achievements" id="achievements">
+        <div class="achievements-content"><h1>RECORDS</h1></div>
+        <div class="achievements-panel">
+            <div class="achievements-grid">
+                <div class="achievement-list">
+                    <!-- =========================================================================== -->
+                    <div class="achievement-card">
+                        <i class="bx bxs-graduation"></i>
+                        <div>
+                            <h3>TUP-CAVITE</h3>
+                            <p>Cum Laude — GPA: 1.579</p>
+                            <p>Scholastic Awardee</p>
+                        </div><span>2022-2025</span>
+                    </div>
+                    <!-- =========================================================================== -->
+                    <div class="achievement-card">
+                        <i class="bx bxs-medal"></i>
+                        <div>
+                            <h3>UNIVERSITY OF PERPETUAL HELP - MOLINO</h3>
+                            <p>With Honors</p>
+                            </div>
+                        <span>2018-2020</span>
+                    </div>
+                    <!-- =========================================================================== -->
+                    <div class="achievement-card">
+                        <i class="bx bx-calendar-star"></i>
+                        <div>
+                            <h3>RESEARCH & EVENTS PARTICIPATION</h3>
+                            <p>1st INNOTECH-CON: DARE 2025</p>
+                            <p>Event Participation — February 13, 2025</p>
+                        </div>
+                        <span>2025</span>
+                    </div>
+                    <!-- =========================================================================== -->
+                    <div class="achievement-card">
+                        <i class="bx bx-certification"></i>
+                        <div>
+                            <h3>CISCO NETWORKING ACADEMY</h3>
+                            <p>Introduction to Cybersecurity — Nov 2, 2024</p>
+                            <p>Networking Basics — Oct 10, 2024</p>
+                            <p>Packet Tracer Exam — Sep 15, 2024</p>
+                            <p>Network Addressing & Troubleshooting — Sep 15, 2024</p>
+                        </div>
+                        <span>2024</span>
+                    </div>
+                    <!-- =========================================================================== -->
+                    <div class="achievement-card">
+                        <i class="bx bx-shield-quarter"></i>
+                        <div>
+                            <h3>UPSKILL IT WORKSHOP</h3>
+                            <p>Intro to C# with Ethical Hacking — Oct 9, 2021</p>
+                            <p>Dark Web - Cybersecurity — Oct 16, 2021</p>
+                        </div>
+                        <span>2021</span>
+                    </div>
+                    <!-- =========================================================================== -->   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <section class="contact" id="contact">
+    <h2 class="heading">Contact Me</h2>
+    <form action="https://formsubmit.co/joelformaran7545@gmail.com" method="POST">
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-box">
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+        </div>
+        <!-- =========================================================================== -->
+        <div class="input-group-2">
+            <div class="input-box-2">
+                <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    cols="30"
+                    rows="10"
+                    required></textarea>
+            </div>
+        <!-- =========================================================================== -->
+            <input type="submit" value="Send Message" class="cyber-btn">
+        </div>
+
+    </form>
+</section>
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <!-- =========================================================================== -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><i class="bx bxl-github"></i></a>
+            <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+        </div>
+        <!-- ================================================ -->
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#skills">Skills/Stats</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyright">@ Joel Formaran | All Rights Reserved</p>
+    </footer>
+    <!-- ================================================ -->
+    <script src="script.js"></script>
+    <!-- ================================================ -->
+</body>
+</html> 
