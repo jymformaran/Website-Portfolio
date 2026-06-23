@@ -20,7 +20,7 @@ const messages = [
     "Synchronizing records...",
 ];
 
-const totalDuration = 7000;
+const totalDuration = 6000;
 const intervalTime = totalDuration / messages.length;
 
 // Check if loader has already been shown
@@ -53,7 +53,7 @@ if (sessionStorage.getItem("loaderShown")) {
 
             setTimeout(() => {
                 loader.style.display = "none";
-            }, 800);
+            }, 600);
 
         }, totalDuration);
     });
