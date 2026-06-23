@@ -161,7 +161,7 @@ body{
     transition: all 0.3s ease;
     border-bottom: 0.3rem solid transparent;
 }
-
+ 
 .navbar a:hover{
     color: #00fff7;
     border-bottom-color: #00fff7;
@@ -170,8 +170,8 @@ body{
 span{
     color: #87fffb;
     font-family: "Oxanium", sans-serif;
-
-    
+ 
+ 
 }
 /* ============================= BUTTON ============================= */
 .cyber-btn{
@@ -183,7 +183,7 @@ span{
     color: white;
     background: black;
     border: 0.35rem solid #87fffb;
-    
+ 
     border-radius: 3rem;
     cursor: pointer;
     white-space: nowrap;
@@ -340,7 +340,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    
+ 
 }
 .social-icons a{
     display: inline-flex;
@@ -367,7 +367,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    
+ 
     margin-bottom: 1rem;
 }
 .btn{
@@ -515,7 +515,7 @@ section{
     flex-wrap: wrap;
     gap: clamp(2rem, 3vw, 4rem);
     min-height: 100vh;
-    padding: clamp(2rem, 4vw, 4rem);
+    padding: clamp(2rem, 4vw, 4rem) clamp(1.5rem, 5vw, 10%);
     background:
         linear-gradient(
             rgba(0,0,0,.5),
@@ -538,29 +538,29 @@ section{
         0 0 4rem #00fff7;
 }
 .sns{
-    margin-top: clamp(1rem, 2vw, 2rem);
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
-    gap: clamp(1rem, 1.5vw, 1rem);
+    gap: clamp(2rem, 3vw, 4rem);
     width: 100%;
 }
 /* ========================= SKILLS =========================== */
 .skills-content{
     flex: 1 1 42rem;
     width: 100%;
-    max-width: 60rem;
+    max-width: none;
     min-height: 35rem;
-
+ 
     margin: 0;
     padding: 2rem;
-
+ 
     background: #000;
     border: 0.2rem solid #87fffb;
     border-radius: 2.5rem;
     box-sizing: border-box;
-
+ 
     box-shadow:
         0 0 1rem #00fff7,
         0 0 2rem #00fff7,
@@ -640,23 +640,23 @@ section{
 .html{ width:90%; }
 .js{ width:75%; }
 .git{ width:80%; }
-
-
+ 
+ 
 /* ======================== STATS CONTENT ======================= */
 .stats-content{
     flex: 1 1 42rem;
     width: 100%;
-    max-width: 60rem;
+    max-width: none;
     min-height: 35rem;
-
+ 
     margin: 0;
     padding: 2rem;
-
+ 
     background: #000;
     border: 0.2rem solid #87fffb;
     border-radius: 2.5rem;
     box-sizing: border-box;
-
+ 
     box-shadow:
         0 0 1rem #00fff7,
         0 0 2rem #00fff7,
@@ -730,11 +730,11 @@ section{
     display: flex;
     justify-content: center;
     color:white;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 .techs-content{
-    width: min(100%, 195rem);
-    max-width: 121rem;
+    width: 100%;
+    max-width: none;
     min-height: 30rem;
     padding: 2rem;
     overflow: hidden;
@@ -809,7 +809,7 @@ section{
     color:white;
     min-height: 100vh;
     gap: clamp(2rem, 5vw, 5rem);
-    padding: 4rem 5%;
+    padding: 4rem 4rem;
     background:
         linear-gradient(
             rgba(0,0,0,.5),
@@ -822,9 +822,9 @@ section{
 }
 .projects h2{
     font-size: clamp(3.5rem, 7vw, 8rem);
-    margin: 0;
+    margin-top: 7rem;
     font-weight: 900;
-    line-height: 1;
+    line-height: 0.5;
     color: #87fffb;
     text-shadow:
         0 0 0.5rem #00fff7,
@@ -836,7 +836,7 @@ section{
 /* ========================= PROJECT BOX ========================= */
 .project-box{
     width: min(100%, 190rem);
-    min-height: 78rem;
+    min-height: 60rem;
     overflow: hidden;
     padding: clamp(1.5rem, 2vw, 2.5rem);
     border: 0.2rem solid #87fffb;
@@ -862,7 +862,7 @@ section{
 .project-card{
     flex-shrink: 0;
     width: clamp(28rem, 22vw, 35rem);
-    min-height: 72rem;
+    min-height: 60rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -988,7 +988,7 @@ section{
     background:
         linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
         url("image/bg3.png");
-
+ 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -996,8 +996,7 @@ section{
 .achievements-content h1{
     font-size: clamp(3.5rem, 7vw, 8rem);
     font-weight: 900;
-    line-height: 1;
-    margin-top: 0;
+    line-height: 0.6;
     color: #87fffb;
     text-shadow:
         0 0 0.5rem #00fff7,
@@ -1008,7 +1007,7 @@ section{
 }
 .achievements-panel{
     width: min(100%, 120rem);
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     background: #000;
     border: 0.2rem solid #00fff7;
     border-radius: 2rem;
@@ -1026,14 +1025,14 @@ section{
 .achievement-list{
     display: flex;
     flex-direction: column;
-    gap: 1.4rem;
+    gap: 1rem;
 }
 .achievement-card{
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    gap: 2rem;
-    padding: 1.6rem 2rem;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
     background: rgba(255,255,255,.045);
     border: 0.1rem solid rgba(255,255,255,.09);
     border-radius: 1.2rem;
@@ -1045,7 +1044,7 @@ section{
     border-color: #00fff7;
     box-shadow: 0 0 1.8rem #00fff7;
 }
-
+ 
 .achievement-card:hover,
 .achievement-card:hover h3,
 .achievement-card:hover p,
@@ -1054,21 +1053,21 @@ section{
     color: #000;
 }
 .achievement-card i{
-    font-size: clamp(3rem, 5vw, 5rem);
+    font-size: clamp(2rem, 3.2vw, 3.2rem);
     color: #ffd84d;
 }
 .achievement-card h3{
-    font-size: clamp(1.6rem, 2vw, 2rem);
+    font-size: clamp(1.2rem, 1.4vw, 1.4rem);
     margin-bottom: 0.4rem;
     color: #00fff7;
 }
 .achievement-card p{
-    font-size: clamp(1.4rem, 1.8vw, 1.7rem);
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
     line-height: 1.6;
     color: #fff;
 }
 .achievement-card span{
-    font-size: clamp(1.6rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.1rem, 1.5vw, 1.5rem);
     white-space: nowrap;
     color: #00fff7;
 }
@@ -1095,8 +1094,7 @@ section{
     background-repeat: no-repeat;
 }
 .contact h2{
-    margin-top: 5rem;
-    margin-bottom: 1rem;
+    margin-top: 3rem;
     font-size: clamp(3.5rem, 6vw, 7rem);
     color: #00fff7;
     text-shadow:
@@ -1106,12 +1104,32 @@ section{
 }
 .contact form{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
-    gap: clamp(2rem, 5vw, 5rem);
-    width: 100%;
-    margin: 3rem 0;
+    gap: clamp(2rem, 3vw, 3.5rem);
+    width: min(100%, 110rem);
+    padding: 0 clamp(1.5rem, 5vw, 6%);
+}
+.input-group{
+    flex: 1 1 38rem;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 3vw, 3.5rem);
+}
+.input-box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 3vw, 3.5rem);
+}
+.input-group-2{
+    flex: 1 1 38rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(2rem, 3vw, 3.5rem);
 }
 .contact form .input-box input,
 .contact form textarea{
@@ -1127,9 +1145,18 @@ section{
         0 0 1rem #00fff7,
         0 0 2rem #00fff7;
 }
+.contact form .input-box input{
+    flex: 1;
+}
 .input-box-2{
-    width: min(100%, 65rem);
+    flex: 1;
+    width: 100%;
+    display: flex;
     color: #fff;
+}
+.contact form textarea{
+    flex: 1;
+    height: 100%;
 }
 /* =========================== FOOTER =========================== */
 .footer{
@@ -1143,6 +1170,8 @@ section{
     margin-top: 3rem;
     margin-bottom: 3rem;
     padding-left: 2rem;
+    display: flex;
+    justify-content: center;
 }
 .footer ul{
     text-align: center;
@@ -1174,21 +1203,21 @@ section{
     #menu-icon{
         display: block;
     }
-
+ 
     .navbar{
         display: none; /* Replace with your mobile menu logic if using JS */
     }
-
+ 
     .logo{
         font-size: 2.2rem;
     }
-
+ 
     .header{
         height: 6rem;
     }
 }
 @media (max-width: 768px){
-
+ 
     .mainmenu{
         flex-direction: column;
         padding-top: 10rem;
@@ -1204,15 +1233,15 @@ section{
     }
 }
 @media (max-width: 768px){
-
+ 
     .btn-group{
         justify-content: center;
     }
-
+ 
     .social-icons{
         justify-content: center;
     }
-
+ 
     .character-status{
         max-width: 100%;
     }
@@ -1284,7 +1313,7 @@ section{
     }
 }
 @media (max-width: 992px){
-
+ 
     .mainmenu{
         justify-content: left;
         text-align: center;
@@ -1312,7 +1341,7 @@ section{
     .panel-image{
         width: 100%;
     }
-
+ 
     .panel-image img{
         max-width: 22rem;
     }
@@ -1323,69 +1352,127 @@ section{
         min-height: 68rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
+ 
+/* ===== SKILLS / STATS / TECH STACK — SMALLER DESKTOP SCALING ===== */
 @media (max-width: 1285px){
-
+    .ssts{
+        padding: clamp(1.5rem, 3vw, 3rem) clamp(1.5rem, 5vw, 8%);
+        gap: clamp(1.5rem, 2.5vw, 3rem);
+    }
+    .ssts h1{
+        font-size: clamp(2.4rem, 3.4vw, 3.4rem);
+    }
+    .sns{
+        gap: clamp(1.5rem, 2.5vw, 3rem);
+    }
+    .skills-content,
+    .stats-content{
+        flex-basis: 36rem;
+        min-height: 30rem;
+        padding: 1.6rem;
+    }
+    .techs-content{
+        min-height: 26rem;
+        padding: 1.6rem;
+    }
+    .tech-card{
+        width: clamp(11rem, 14vw, 14rem);
+        height: clamp(11rem, 14vw, 14rem);
+    }
+    .tech-card i{
+        font-size: clamp(4.2rem, 7vw, 8rem);
+    }
+}
+ 
+/* ===== SKILLS / STATS / TECH STACK — TABLET SCALING ===== */
+@media (max-width: 992px){
+    .ssts{
+        padding: clamp(1.25rem, 3vw, 2.5rem) clamp(1.25rem, 4vw, 5%);
+    }
+    .ssts h1{
+        font-size: clamp(2.2rem, 4vw, 3rem);
+    }
+    .skills-content,
+    .stats-content{
+        flex-basis: 28rem;
+        min-height: auto;
+        padding: 1.4rem;
+    }
+    .techs-content{
+        min-height: auto;
+        padding: 1.4rem;
+    }
+    .tech-card{
+        width: clamp(10rem, 22vw, 13rem);
+        height: clamp(10rem, 22vw, 13rem);
+    }
+    .tech-card i{
+        font-size: clamp(3.8rem, 10vw, 7rem);
+    }
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+@media (max-width: 1285px){
+ 
     #menu-icon{
         display: block;
     }
-
+ 
     .navbar{
         position: absolute;
         top: 100%;
         right: 0;
-
+ 
         width: min(32rem, 80vw);
-
+ 
         padding: 2rem;
-
+ 
         display: none;
-
+ 
         background: rgba(0,0,0,.85);
-
+ 
         border-left: 0.2rem solid #00fff7;
         border-bottom: 0.2rem solid #00fff7;
         border-bottom-left-radius: 2rem;
     }
-
+ 
     .navbar.active{
         display: block;
     }
-
+ 
     .navbar a{
         display: block;
         margin: 2rem 0;
         font-size: 1.8rem;
     }
-
+ 
     .contact form{
         flex-direction: column;
     }
-    
+ 
 }
-
+ 
 @media (max-width: 768px){
-
+ 
     .achievement-card{
         grid-template-columns: 1fr;
         text-align: center;
         padding:1rem;
-        
+ 
     }
-
+ 
     .achievement-card span{
         white-space: normal;
     }
-
+ 
     .achievements-panel{
         padding: 1rem;
         width:85%;
