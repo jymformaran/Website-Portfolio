@@ -170,8 +170,6 @@ body{
 span{
     color: #87fffb;
     font-family: "Oxanium", sans-serif;
- 
- 
 }
 /* ============================= BUTTON ============================= */
 .cyber-btn{
@@ -191,6 +189,7 @@ span{
 }
 .cyber-btn:hover{
     color: black;
+    border-color: black;
     background-color: #00fff7;
     box-shadow:
         0 0 0.5rem #00fff7,
@@ -340,7 +339,6 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
- 
 }
 .social-icons a{
     display: inline-flex;
@@ -385,6 +383,7 @@ section{
 }
 .btn:hover{
     transform: scale(1.1);
+    border-color: white;
     background-color: #ff00aa;
     box-shadow:
         0 0 2.5rem #ff00aa,
@@ -397,6 +396,7 @@ section{
     box-shadow: none;
 }
 .btn-group a:nth-of-type(2):hover{
+    border-color: black;
     background: #00fff7;
     color: #000;
     box-shadow:
@@ -513,7 +513,7 @@ section{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: clamp(2rem, 3vw, 4rem);
+    gap: clamp(1rem, 1.5vw, 2rem);
     min-height: 100vh;
     padding: clamp(2rem, 4vw, 4rem) clamp(1.5rem, 5vw, 10%);
     background:
@@ -538,12 +538,12 @@ section{
         0 0 4rem #00fff7;
 }
 .sns{
-    margin-top: 5rem;
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
-    gap: clamp(2rem, 3vw, 4rem);
+    gap: clamp(1rem, 1.5vw, 2rem);
     width: 100%;
 }
 /* ========================= SKILLS =========================== */
@@ -551,11 +551,9 @@ section{
     flex: 1 1 42rem;
     width: 100%;
     max-width: none;
-    min-height: 35rem;
- 
+    min-height: 30rem;
     margin: 0;
     padding: 2rem;
- 
     background: #000;
     border: 0.2rem solid #87fffb;
     border-radius: 2.5rem;
@@ -570,7 +568,7 @@ section{
     flex: 1;
 }
 .skills-box{
-    margin: 1rem 0;
+    margin: 0;
 }
 .skill-top{
     display: flex;
@@ -588,12 +586,14 @@ section{
         0 0 1rem #00fff7;
 }
 .skill-top span{
+    font-size: 1rem;
     color: #87fffb;
     font-weight: 600;
 }
 /* ====================== PANEL LAYOUT ======================= */
 .panel{
     display: flex;
+    margin-top: -1rem;
     align-items: center;
 }
 .panel-body{
@@ -617,7 +617,7 @@ section{
 .progress-bar{
     width: 100%;
     height: 1rem;
-    margin-top: 0.2rem;
+    margin-bottom: 1rem;
     background: rgba(255,255,255,.12);
     border-radius: 3rem;
     overflow: hidden;
@@ -640,23 +640,18 @@ section{
 .html{ width:90%; }
 .js{ width:75%; }
 .git{ width:80%; }
- 
- 
 /* ======================== STATS CONTENT ======================= */
 .stats-content{
     flex: 1 1 42rem;
     width: 100%;
     max-width: none;
-    min-height: 35rem;
- 
+    min-height: 30rem;
     margin: 0;
     padding: 2rem;
- 
     background: #000;
     border: 0.2rem solid #87fffb;
     border-radius: 2.5rem;
     box-sizing: border-box;
- 
     box-shadow:
         0 0 1rem #00fff7,
         0 0 2rem #00fff7,
@@ -670,7 +665,7 @@ section{
 }
 .stats-box span{
     flex: 1;
-    font-size: clamp(1rem, 1.4vw, 1.4rem);
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
     color: #87fffb;
@@ -710,6 +705,7 @@ section{
 }
 .panel-image2{
     display: flex;
+    margin-left:5rem;
     justify-content: center;
     align-items: center;
     flex: 1;
@@ -718,9 +714,9 @@ section{
 }
 .panel-image2 img{
     width: 100%;
-    max-width: 50rem;
+    max-width: 28rem;
     height: auto;
-    margin: 0;
+    margin-top: 2rem;
     padding-top: 2rem;
 }
 /* ======================== TECH STACK ======================= */
@@ -730,13 +726,13 @@ section{
     display: flex;
     justify-content: center;
     color:white;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 .techs-content{
     width: 100%;
-    max-width: none;
-    min-height: 30rem;
-    padding: 2rem;
+    max-width: 1350px;
+    height: 18rem;
+    padding-top: 1.5rem;
     overflow: hidden;
     box-sizing: border-box;
     background: #000;
@@ -749,7 +745,7 @@ section{
 }
 .tech-stack-grid{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     width: max-content;
     animation: scrollRight 13s linear infinite;
 }
@@ -766,14 +762,15 @@ section{
 }
 .tech-card{
     flex-shrink: 0;
-    width: clamp(12rem, 16vw, 17rem);
-    height: clamp(12rem, 16vw, 17rem);
-    margin-top: 2rem;
+    width: clamp(8rem, 12vw, 12rem);
+    height: clamp(8rem, 12vw, 12rem);
+    padding: 1rem;
+    margin-top: 0.7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     background: rgba(0,0,0,.45);
     border: 0.3rem solid #00fff7;
     border-radius: 1.5rem;
@@ -787,7 +784,7 @@ section{
         0 0 6.6rem #00fff7;
 }
 .tech-card i{
-    font-size: clamp(5rem, 8vw, 10rem);
+    font-size: clamp(2.4rem, 6vw, 7rem);
     color: #87fffb;
     text-shadow: 0 0 1.5rem #00fff7;
 }
@@ -806,54 +803,53 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:white;
     min-height: 100vh;
-    gap: clamp(2rem, 5vw, 5rem);
-    padding: 4rem 4rem;
+    padding: 4rem;
+    gap: 3rem;
+    color: #fff;
     background:
         linear-gradient(
             rgba(0,0,0,.5),
             rgba(0,0,0,.5)
         ),
         url("image/bg7.png");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .projects h2{
-    font-size: clamp(3.5rem, 7vw, 8rem);
-    margin-top: 7rem;
+    margin-top: 5rem;
+    font-size: clamp(2.8rem, 4vw, 4rem);
     font-weight: 900;
-    line-height: 0.5;
+    line-height: 1;
     color: #87fffb;
     text-shadow:
-        0 0 0.5rem #00fff7,
+        0 0 .5rem #00fff7,
         0 0 1rem #00fff7,
         0 0 2rem #00fff7,
-        0 0 4rem #00fff7,
-        0 0 8rem #00fff7;
+        0 0 4rem #00fff7;
 }
 /* ========================= PROJECT BOX ========================= */
 .project-box{
     width: min(100%, 190rem);
-    min-height: 60rem;
     overflow: hidden;
-    padding: clamp(1.5rem, 2vw, 2.5rem);
-    border: 0.2rem solid #87fffb;
-    border-radius: 2.5rem;
+    padding: 2rem;
+    border: .2rem solid #87fffb;
+    border-radius: 2rem;
+    background: rgba(0,0,0,.25);
+    backdrop-filter: blur(12px);
     box-shadow:
         0 0 1rem #00fff7,
         0 0 2rem #00fff7,
-        inset 0 0 1.5rem #00fff7;
-    background: rgba(0,0,0,0.25);
-    backdrop-filter: blur(1.2rem);
+        inset 0 0 1rem #00fff7;
 }
 /* ========================= SCROLL TRACK ========================= */
 .projects-track{
     display: flex;
-    gap: clamp(1.5rem, 2vw, 3rem);
+    gap: 2rem;
     width: max-content;
-    animation: scrollProjects 25s linear infinite;
+    animation: scrollProjects 30s linear infinite;
 }
 .projects-track:hover{
     animation-play-state: paused;
@@ -861,102 +857,91 @@ section{
 /* ========================= PROJECT CARD ========================= */
 .project-card{
     flex-shrink: 0;
-    width: clamp(28rem, 22vw, 35rem);
-    min-height: 60rem;
+    width: clamp(22rem, 17vw, 26rem); /* narrower */
+    min-height: 46rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: clamp(1.5rem, 2vw, 2.4rem);
+    padding: 2rem;
     background: #050505;
-    border: 0.2rem solid #87fffb;
-    border-radius: 2.5rem;
+    border: .2rem solid #87fffb;
+    border-radius: 2rem;
     box-shadow:
         0 0 1rem #00fff7,
         0 0 2rem #00fff7,
-        inset 0 0 1.5rem #00fff7;
-    transition: 0.3s ease;
+        inset 0 0 1rem #00fff7;
+    transition: .3s ease;
 }
 .project-card:hover{
     transform: scale(1.03);
     box-shadow:
         0 0 2rem #00fff7,
-        0 0 4.5rem #00fff7;
+        0 0 4rem #00fff7;
 }
+/* ========================= IMAGE ========================= */
 .project-card img{
     width: 100%;
-    max-width: 28rem;
-    aspect-ratio: 14 / 9;
+    aspect-ratio: 14 / 9; /* requested ratio */
     object-fit: cover;
-    border-radius: 1.5rem;
-    margin-bottom: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+/* ========================= TITLE ========================= */
+.project-card h3{
+    min-height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
 }
 /* ========================= LANGUAGE ========================= */
 .lang{
-    width: 100%;
-    padding-top: 1rem;
+    min-height: 5.8rem;
+    margin-bottom: 1.5rem;
 }
 .language{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 0.8rem;
-    margin: 1.8rem 0;
+    gap: .6rem;
+    align-items: center;
+    justify-content: center;
 }
 .language span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 0.6rem 1.4rem;
+    padding: .45rem 1rem;
+    border: .2rem solid #00fff7;
+    border-radius: 999px;
     background: #000;
     color: #fff;
-    border: 0.2rem solid #00fff7;
-    border-radius: 999rem;
-    font-size: clamp(1.1rem, 1.2vw, 1.3rem);
+    font-size: 1.05rem;
     font-weight: 600;
     white-space: nowrap;
-    user-select: none;
-    cursor: default;
-    box-shadow:
-        0 0 0.6rem #00fff7,
-        inset 0 0 0.4rem #00fff7;
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        background-color 0.25s ease;
+    transition: .25s ease;
 }
 .language span:hover{
-    transform: scale(1.08);
+    transform: scale(1.05);
     background: #00fff7;
     color: #000;
-    box-shadow:
-        0 0 1rem #00fff7,
-        0 0 2rem #00fff7,
-        inset 0 0 0.6rem #00fff7;
 }
-.project-card h3{
-    width: 100%;
-    min-height: 7rem;
+/* ========================= DESCRIPTION ========================= */
+.project-card p{
+    flex-grow: 1;
+    min-height: 6.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    color: #fff;
-    font-size: clamp(1.8rem, 2vw, 2.2rem);
-    font-weight: 700;
-    line-height: 1.3;
+    margin: 0 0 1.5rem 0;
     text-align: center;
-}
-.project-card p{
-    flex: 1;
-    margin: 1.8rem 0;
-    display: flex;
-    align-items: center;
+    line-height: 1.5;
+    font-size: 1.25rem;
     color: #d6d6d6;
-    font-size: clamp(1.3rem, 1.5vw, 1.5rem);
-    line-height: 1.7;
-    text-align: center;
 }
+/* ========================= BUTTON ========================= */
 .project-card a{
     width: 100%;
     display: flex;
@@ -965,9 +950,9 @@ section{
     text-decoration: none;
 }
 .project-card .cyber-btn{
-    width: min(100%, 21rem);
-    margin-bottom: 2rem;
+    width: 17rem;
 }
+/* ========================= ANIMATION ========================= */
 @keyframes scrollProjects{
     from{
         transform: translateX(0);
@@ -994,7 +979,7 @@ section{
     background-repeat: no-repeat;
 }
 .achievements-content h1{
-    font-size: clamp(3.5rem, 7vw, 8rem);
+    font-size: clamp(2.8rem, 4vw, 4rem);
     font-weight: 900;
     line-height: 0.6;
     color: #87fffb;
@@ -1044,37 +1029,31 @@ section{
     border-color: #00fff7;
     box-shadow: 0 0 1.8rem #00fff7;
 }
- 
 .achievement-card:hover,
 .achievement-card:hover h3,
 .achievement-card:hover p,
 .achievement-card:hover i,
 .achievement-card:hover span{
     color: #000;
+
 }
 .achievement-card i{
-    font-size: clamp(2rem, 3.2vw, 3.2rem);
+    font-size: 5rem;
     color: #ffd84d;
 }
 .achievement-card h3{
-    font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+    font-size: 2rem;
     margin-bottom: 0.4rem;
     color: #00fff7;
 }
 .achievement-card p{
-    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    font-size: 1.6rem;
     line-height: 1.6;
     color: #fff;
 }
 .achievement-card span{
-    font-size: clamp(1.1rem, 1.5vw, 1.5rem);
-    white-space: nowrap;
-    color: #00fff7;
-}
-.achievement-trophy img{
-    width: 100%;
-    max-width: 50rem;
-    height: auto;
+    font-size: 2rem;
+
 }
 /* =========================== CONTACT =========================== */
 .contact{
@@ -1095,12 +1074,15 @@ section{
 }
 .contact h2{
     margin-top: 3rem;
-    font-size: clamp(3.5rem, 6vw, 7rem);
-    color: #00fff7;
+    margin-bottom:-3rem;
+    font-size: clamp(2.8rem, 4vw, 4rem);
+    color: #87fffb;
     text-shadow:
+        0 0 0.5rem #00fff7,
+        0 0 1rem #00fff7,
         0 0 2rem #00fff7,
-        0 0 5rem #00fff7,
-        0 0 9rem #00fff7;
+        0 0 4rem #00fff7,
+        0 0 8rem #00fff7;
 }
 .contact form{
     display: flex;
@@ -1203,21 +1185,17 @@ section{
     #menu-icon{
         display: block;
     }
- 
     .navbar{
-        display: none; /* Replace with your mobile menu logic if using JS */
+        display: none;
     }
- 
     .logo{
         font-size: 2.2rem;
     }
- 
     .header{
         height: 6rem;
     }
 }
 @media (max-width: 768px){
- 
     .mainmenu{
         flex-direction: column;
         padding-top: 10rem;
@@ -1233,15 +1211,12 @@ section{
     }
 }
 @media (max-width: 768px){
- 
     .btn-group{
         justify-content: center;
     }
- 
     .social-icons{
         justify-content: center;
     }
- 
     .character-status{
         max-width: 100%;
     }
@@ -1276,28 +1251,52 @@ section{
     .stats-box p{
         padding-left: 0;
     }
-    .panel-image2 img{
-        max-width: 25rem;
+    .panel-image2{
+        width: 8rem;
     }
     .tech-card{
         width: 14rem;
         height: 14rem;
     }
 }
-/* ========================= PHONE ========================= */
 @media (max-width: 768px){
     .project-box{
-        min-height: auto;
+        height: auto;
     }
-    .project-card{
-        width: 26rem;
-        min-height: 64rem;
+    .project-track{
+        height:auto;
     }
     .project-card img{
-        max-width: 100%;
+        max-width: 80%;
+    }
+    .project-card p{
+        margin-top: -1rem;
     }
     .language{
         justify-content: center;
+        margin-top: -1rem;
+        margin-bottom: -10rem;
+    }
+    .project-card .cyber-btn{
+        margin-top:-5rem;
+    }
+}
+@media (max-width: 768px){
+ 
+    .achievement-card{
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        padding:1rem;
+    }
+    .achievement-card span{
+        white-space: normal;
+    }
+    .achievements-panel{
+        padding: 1rem;
+        width:85%;
     }
 }
 /* ===================== TABLET ===================== */
@@ -1312,8 +1311,8 @@ section{
         font-size: 1.6rem;
     }
 }
+/* ========== MAIN MENU ========== */
 @media (max-width: 992px){
- 
     .mainmenu{
         justify-content: left;
         text-align: center;
@@ -1323,6 +1322,7 @@ section{
         text-align: center;
     }
 }
+/* ========== CHARACTER PROFILE  ========== */
 @media (max-width: 992px){
     .characterprofile{
         flex-direction: column;
@@ -1332,28 +1332,226 @@ section{
         text-align: center;
     }
 }
+/* ========== PROJECT ========== */
 @media (max-width: 992px){
     .panel{
         flex-direction: column;
+        align-items: center;
         text-align: center;
+        gap: 2rem;
     }
     .panel-body,
     .panel-image{
         width: 100%;
     }
- 
     .panel-image img{
         max-width: 22rem;
+        width: 100%;
+    }
+    .projects{
+        padding: 3rem 2rem;
+        gap: 2rem;
+    }
+
+    .projects h2{
+        font-size: 3rem;
+        margin-top: 6rem;
+    }
+    .project-box{
+        padding: 1.5rem;
+    }
+
+    .projects-track{
+        gap: 1.5rem;
+    }
+    .project-card{
+        width: 26rem;
+        min-height: 44rem;
+        padding: 1.25rem;
+    }
+    .project-card img{
+        aspect-ratio: 14 / 9;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+    }
+    .project-card h3{
+        min-height: 4rem;
+        font-size: 1.7rem;
+    }
+    .lang{
+        min-height: 5rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+    .language{
+        gap: 0.5rem;
+    }
+
+    .language span{
+        font-size: 1rem;
+        padding: 0.4rem 0.9rem;
+    }
+    .project-card p{
+        min-height: 6rem;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    .project-card .cyber-btn{
+        width: 16rem;
+        margin-bottom: 3rem;
+    }
+    
+}
+
+/* ===================== SSTS ===================== */
+@media (max-width: 992px){
+    .ssts{
+        padding: 2rem;
+    }
+    .sns{
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+    .skills-content{
+        width: 100%;
+        flex: none;
+        height: 8rem;
+        padding: 1.5rem;
+        margin-top: 3rem;
+        padding-left:2rem;
+    }
+    .skills-content h1{
+        margin: 2rem;
+    }
+    .progress-bar{
+        width: 100%;
+        height: 1rem;
+        margin-bottom: 1rem;
+        background: rgba(255,255,255,.12);
+        border-radius: 3rem;
+        overflow: hidden;
+    }
+    .stats-content{
+        width: 100%;
+        min-height: 28rem;
+        padding: 1.5rem 2rem;
+        margin-top: 1rem;
+    }
+    .stats-content h1{
+        margin: 2rem 0 1.5rem 0;
+        font-size: 2.8rem;
+    }
+    .stats-content .panel{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .stats-box{
+        margin-bottom: 0.6rem;
+    }
+
+    .stats-box i{
+        font-size: 2rem;
+    }
+
+    .stats-box span,
+    .stats-box p{
+        font-size: 1.3rem;
+        text-align: left;
+    }
+    .panel{
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    .panel-body{
+        flex: 1;
+        margin-top: 2rem;
+        padding-left: 2rem;
+    }
+    .panel-body2{
+        flex: 1;
+        margin-top: 2rem;
+        padding: 0;
+    }
+    .panel-image{
+        flex: 0 0 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .panel-image img{
+        width: 100%;
+        max-width: 16rem;
+        height: auto;
+        padding: 0;
+    }
+    .panel-image2{
+        flex: 0 0 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .panel-image2 img{
+        width: 100%;
+        width: 45rem; 
+        padding: 0;
+    }
+    .techs-content{
+        height: 7rem;
+        padding-top: 1rem;
+    }
+    .techs-content h1{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .tech-stack-grid{
+        gap: 0.8rem;
+    }
+    .tech-card{
+        width: 7rem;
+        height: 7rem;
+        margin-top: 0.5rem;
+        padding: 0.8rem;
+    }
+    .tech-card i{
+        font-size: 2.8rem;
+    }
+    .tech-card p{
+        font-size: 1rem;
     }
 }
 @media (max-width: 992px){
-    .project-card{
-        width: 30rem;
-        min-height: 68rem;
+ 
+    .achievement-card{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        text-align: left;
+        flex-direction: row;
+        padding:1rem;
+    }
+    .achievements-content h1{
+        margin-top: 2rem;
+    }
+    .achievement-card span{
+        white-space: normal;
+    }
+    .achievements-panel{
+        padding: 1rem;
+        width:85%;
     }
 }
- 
-/* ===== SKILLS / STATS / TECH STACK — SMALLER DESKTOP SCALING ===== */
+/* ===================== BIG SCREEN ===================== */
 @media (max-width: 1285px){
     .ssts{
         padding: clamp(1.5rem, 3vw, 3rem) clamp(1.5rem, 5vw, 8%);
@@ -1372,7 +1570,7 @@ section{
         padding: 1.6rem;
     }
     .techs-content{
-        min-height: 26rem;
+        height: 26rem;
         padding: 1.6rem;
     }
     .tech-card{
@@ -1383,98 +1581,31 @@ section{
         font-size: clamp(4.2rem, 7vw, 8rem);
     }
 }
- 
-/* ===== SKILLS / STATS / TECH STACK — TABLET SCALING ===== */
-@media (max-width: 992px){
-    .ssts{
-        padding: clamp(1.25rem, 3vw, 2.5rem) clamp(1.25rem, 4vw, 5%);
-    }
-    .ssts h1{
-        font-size: clamp(2.2rem, 4vw, 3rem);
-    }
-    .skills-content,
-    .stats-content{
-        flex-basis: 28rem;
-        min-height: auto;
-        padding: 1.4rem;
-    }
-    .techs-content{
-        min-height: auto;
-        padding: 1.4rem;
-    }
-    .tech-card{
-        width: clamp(10rem, 22vw, 13rem);
-        height: clamp(10rem, 22vw, 13rem);
-    }
-    .tech-card i{
-        font-size: clamp(3.8rem, 10vw, 7rem);
-    }
-}
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 @media (max-width: 1285px){
- 
     #menu-icon{
         display: block;
     }
- 
     .navbar{
         position: absolute;
         top: 100%;
         right: 0;
- 
         width: min(32rem, 80vw);
- 
         padding: 2rem;
- 
         display: none;
- 
         background: rgba(0,0,0,.85);
- 
         border-left: 0.2rem solid #00fff7;
         border-bottom: 0.2rem solid #00fff7;
         border-bottom-left-radius: 2rem;
     }
- 
     .navbar.active{
         display: block;
     }
- 
     .navbar a{
         display: block;
         margin: 2rem 0;
         font-size: 1.8rem;
     }
- 
     .contact form{
         flex-direction: column;
-    }
- 
-}
- 
-@media (max-width: 768px){
- 
-    .achievement-card{
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding:1rem;
- 
-    }
- 
-    .achievement-card span{
-        white-space: normal;
-    }
- 
-    .achievements-panel{
-        padding: 1rem;
-        width:85%;
     }
 }
