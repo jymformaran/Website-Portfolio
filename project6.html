@@ -1,95 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- =========================================================================== -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="projectstyle.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
-<!-- =========================================================================== -->
 <body>
+    <!-- ================= HEADER ================= -->
     <header class="header">
-
-        <a href="index.html#mainmenu" class="logo">
-            Joel /<Span>/ Archives</Span></a>
-
+        <a href="index.html#mainmenu" class="logo">Joel /<span>/ Archives</span></a>
         <i class="bx bx-menu" id="menu-icon"></i>
-        <!-- ================================================ -->
         <nav class="navbar">
             <a href="index.html#mainmenu">MAIN MENU</a>
             <a href="index.html#characterprofile">ABOUT</a>
             <a href="index.html#ssts">STATS</a>
             <a href="index.html#projects">QUEST LOG</a>
-            <a href="index.html#achievements">RECORDS</a>    
-            <a href="index.html#contact"><button class="cyber-btn">Connect</button></a>
+            <a href="index.html#achievements">RECORDS</a>
+            <a href="index.html#contact">
+                <button class="cyber-btn">Connect</button>
+            </a>
         </nav>
-        <!-- ================================================ -->
     </header>
-    <!-- =========================================================================== -->
-    <!-- =========================================================================== -->
-    <!-- =========================================================================== -->
+    <!-- ================= PROJECT ================= -->
     <section class="project">
-        <div class="project-top">
-            <div class="project-left">
-            <span class="label">MISSION #6:</span>
-            <h1>Activity: LoL Champion Showcase Website</h1>
-            <!-- =========================================================================== -->
-            <div class="info-row">
-                <span class="label">TECH USED:</span>
-                <div class="lang">
-                    <div class="language">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Javascript</span>
+        <div class="project-container">
+            <div class="project-top">
+                <div class="project-left">
+                    <h3>MISSION #6</h3>
+                    <h1>Activity: LoL Champion Showcase Website</h1>
+                    <!-- ================= TECH STACK =================-->
+                    <div class="info-row">
+                        <h3>TECH USED:</h3>
+                        <div class="language">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Javascript</span>
+                        </div>
+                    </div>
+                    <!-- ===================================================-->
+                    <div class="difficulty">
+                        <h3>DIFFICULTY:</h3>
+                        ⭐⭐
+                    </div>
+                    <div class="reward">
+                        <h3>REWARD:</h3>
+                        <p>
+                            5,000 XP
+                        </p>
+                    </div>
+                </div>
+                <!-- ===================================================-->
+                <div class="project-right">
+                    <div class="video-container">
+                        <iframe
+                            width="100%"
+                            height="400"
+                            src="https://www.youtube.com/embed/hpI7S-jJ5w8?autoplay=1&mute=1"
+                            title="Project1 Demo"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
             </div>
-            <!-- =========================================================================== -->
-            <div class="difficulty"><span class="label">DIFFICULTY:</span>   ⭐⭐</div>
-            <!-- =========================================================================== -->
-            <div class="reward">
-                <span class="label">REWARD:</span>
+            <!-- ===================================================-->
+            <div class="objective">
+                <h3>OBJECTIVE</h3>
+                <p>Develop an interactive and responsive champion showcase website as a course requirement to strengthen front-end web development 
+                    skills, multimedia integration, and modern user interface design using HTML, CSS, and JavaScript.
+                </p>
+                <h3>ABOUT:</h3>
                 <p>
-                    5,000 XP
+                    The League of Legends Champion Showcase Website is a school activity created to fulfill the requirements of a web development 
+                    subject. Inspired by the popular game, the website features interactive champion profiles, responsive layouts, and multimedia 
+                    elements that enhance the user experience. Built with HTML, CSS, and JavaScript, the project demonstrates proficiency in front-end
+                    development, responsive design principles, and creating visually engaging web interfaces.
                 </p>
             </div>
         </div>
-        <!-- =========================================================================== -->
-        <!-- =========================================================================== -->
-        <!-- =========================================================================== -->
-        <div class="project-right">
-            <div class="video-container">
-                <iframe
-                    width="100%"
-                    height="400"
-                    src="https://www.youtube.com/embed/hpI7S-jJ5w8?autoplay=1&mute=1"
-                    title="Project6 Demo"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-    </div>
-    <!-- =========================================================================== -->
-    <div class="objective">
-        <span><h3>OBJECTIVE:</h3></span>
-        <p>Develop an interactive and responsive champion showcase website as a course requirement to strengthen front-end web development 
-            skills, multimedia integration, and modern user interface design using HTML, CSS, and JavaScript.
-        </p>
-        <span><h3>ABOUT:</h3></span>
-        <p>
-            The League of Legends Champion Showcase Website is a school activity created to fulfill the requirements of a web development 
-            subject. Inspired by the popular game, the website features interactive champion profiles, responsive layouts, and multimedia 
-            elements that enhance the user experience. Built with HTML, CSS, and JavaScript, the project demonstrates proficiency in front-end
-             development, responsive design principles, and creating visually engaging web interfaces.
-        </p>
-    </div>
-</section>
+    </section>
+    <!-- ================================================ -->
+    <script src="projectscript.js"></script>
+    <!-- ================================================ -->
 </body>
-</html> 
+</html>

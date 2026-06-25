@@ -1,94 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- =========================================================================== -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="projectstyle.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
-<!-- =========================================================================== -->
 <body>
+    <!-- ================= HEADER ================= -->
     <header class="header">
-
-        <a href="index.html#mainmenu" class="logo">
-            Joel /<Span>/ Archives</Span></a>
-
+        <a href="index.html#mainmenu" class="logo">Joel /<span>/ Archives</span></a>
         <i class="bx bx-menu" id="menu-icon"></i>
-        <!-- ================================================ -->
         <nav class="navbar">
             <a href="index.html#mainmenu">MAIN MENU</a>
             <a href="index.html#characterprofile">ABOUT</a>
             <a href="index.html#ssts">STATS</a>
             <a href="index.html#projects">QUEST LOG</a>
-            <a href="index.html#achievements">RECORDS</a>    
-            <a href="index.html#contact"><button class="cyber-btn">Connect</button></a>
+            <a href="index.html#achievements">RECORDS</a>
+            <a href="index.html#contact">
+                <button class="cyber-btn">Connect</button>
+            </a>
         </nav>
-        <!-- ================================================ -->
     </header>
-    <!-- =========================================================================== -->
-    <!-- =========================================================================== -->
-    <!-- =========================================================================== -->
+    <!-- ================= PROJECT ================= -->
     <section class="project">
-        <div class="project-top">
-            <div class="project-left">
-            <span class="label">MISSION #3:</span>
-            <h1>Arduino-based Wireless<br>Control Car</h1>
-            <!-- =========================================================================== -->
-            <div class="info-row">
-                <span class="label">TECH USED:</span>
-                <div class="lang">
-                    <div class="language">
-                        <span>Arduino Uno</span>
-                        <span>Bluetooth</span>
-                        <span>C++</span>
+        <div class="project-container">
+            <div class="project-top">
+                <div class="project-left">
+                    <h3>MISSION #3</h3>
+                    <h1>Arduino-based Wireless<br>Control Car</h1>
+                    <!-- ================= TECH STACK =================-->
+                    <div class="info-row">
+                        <h3>TECH USED:</h3>
+                        <div class="language">
+                            <span>Arduino Uno</span>
+                            <span>Bluetooth</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                    <!-- ===================================================-->
+                    <div class="difficulty">
+                        <h3>DIFFICULTY:</h3>
+                        ⭐⭐⭐⭐
+                    </div>
+                    <div class="reward">
+                        <h3>REWARD:</h3>
+                        <p>
+                            9,000 xp
+                        </p>
+                    </div>
+                </div>
+                <!-- ===================================================-->
+                <div class="project-right">
+                    <div class="video-container">
+                        <iframe
+                            width="100%"
+                            height="400"
+                            src="https://www.youtube.com/embed/bLOMWnHHSZE?autoplay=1&mute=1"
+                            title="Project1 Demo"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
             </div>
-            <!-- =========================================================================== -->
-            <div class="difficulty"><span class="label">DIFFICULTY:</span>  ⭐⭐⭐</div>
-            <!-- =========================================================================== -->
-            <div class="reward">
-                <span class="label">REWARD:</span>
+            <!-- ===================================================-->
+            <div class="objective">
+                <h3>OBJECTIVE</h3>
                 <p>
-                    7,000 XP
+                    Design and construct a wireless-controlled vehicle as part of an embedded systems course to apply concepts in 
+                    microcontroller programming, electronics, and wireless communication.
+                </p>
+                <h3>ABOUT</h3>
+                <p>
+                    The Arduino-Based Wireless Control Car was developed as an academic project for a hardware-focused subject. 
+                    It demonstrates the practical implementation of Arduino programming, motor control, and wireless connectivity 
+                    while providing hands-on experience in building and testing embedded systems.
                 </p>
             </div>
         </div>
-        <!-- =========================================================================== -->
-        <!-- =========================================================================== -->
-        <!-- =========================================================================== -->
-        <div class="project-right">
-            <div class="video-container">
-                <iframe
-                    width="100%"
-                    height="400"
-                    src="https://www.youtube.com/embed/bLOMWnHHSZE?autoplay=1&mute=1"
-                    title="Project3 Demo"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-    </div>
-    <!-- =========================================================================== -->
-    <div class="objective">
-        <span><h3>OBJECTIVE:</h3></span>
-        <p>Design and construct a wireless-controlled vehicle as part of an embedded systems course to apply concepts in 
-            microcontroller programming, electronics, and wireless communication.
-        </p>
-        <span><h3>ABOUT:</h3></span>
-        <p>
-            The Arduino-Based Wireless Control Car was developed as an academic project for a hardware-focused subject. 
-            It demonstrates the practical implementation of Arduino programming, motor control, and wireless connectivity 
-            while providing hands-on experience in building and testing embedded systems.
-        </p>
-    </div>
-</section>
+    </section>
+    <!-- ================================================ -->
+    <script src="projectscript.js"></script>
+    <!-- ================================================ -->
 </body>
-</html> 
+</html>

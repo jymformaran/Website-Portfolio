@@ -6,9 +6,6 @@ menuicon.onclick = () => {
     navbar.classList.toggle('active');
 
 }
-
-
-
 const loader = document.getElementById("loader");
 const loadingText = document.getElementById("loading-text");
 
@@ -23,15 +20,12 @@ const messages = [
 const totalDuration = 6000;
 const intervalTime = totalDuration / messages.length;
 
-// Check if loader has already been shown
 if (sessionStorage.getItem("loaderShown")) {
 
-    // Hide loader immediately
     loader.style.display = "none";
 
 } else {
 
-    // Mark loader as shown
     sessionStorage.setItem("loaderShown", "true");
 
     let current = 0;

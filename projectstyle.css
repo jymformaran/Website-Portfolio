@@ -1,4 +1,4 @@
-*   {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,19 +6,19 @@
     scroll-behavior: smooth;
     font-family: "Oxanium", sans-serif;
 }
-html {
-    font-size: 60%;
+/* ========================================== */
+html{
+    font-size: clamp(50%, 0.5vw + 0.4rem, 62.5%);
     overflow-x: hidden;
 }
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: black;
+    background: #000;
 }
 .charprof-content .btn{
     margin: 5rem 0;
 }
-
 ::-webkit-scrollbar{
     width: 20px;
 }
@@ -59,17 +59,24 @@ body{
     transform: scale(1.1);
 }
 /* =============================NAVBAR=====================================*/
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: clamp(1.5rem, 3vw, 4rem);
+}
 .navbar a{
-    font-size: 1.8rem;
-    color: white;
+    font-size: clamp(1.2rem, 1.3vw, 1.6rem);
+    font-family: "Oxanium", sans-serif;
     font-weight: 500;
-    margin-left: 4rem;
-    transition: 0.3s ease-in-out;
-    border-bottom: 3px solid transparent;
+    color: #fff;
+    margin-left: 0;
+    padding-bottom: 0.3rem;
+    transition: all 0.3s ease;
+    border-bottom: 0.3rem solid transparent;
 }
 .navbar a:hover{
     color: #00fff7;
-    border-bottom: 3px solid #00fff7;
+    border-bottom-color: #00fff7;
 }
 span{
     color: #00fff7;
@@ -90,39 +97,35 @@ span{
 ::-webkit-scrollbar-track{
     background: #000;
 }
-/* =============================BUTTONS=====================================*/
+/* ============================= BUTTON ============================= */
 .cyber-btn{
     margin-top: 1rem;
-    font-size: 1.8rem;
+    padding: clamp(0.8rem, 1vw, 1rem) clamp(1.8rem, 2vw, 2.5rem);
+    font-size: clamp(1.4rem, 1.5vw, 1.8rem);
     font-weight: 600;
-    padding: 1rem 2rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    background: black;
+    border: 0.35rem solid #87fffb;
+ 
     border-radius: 3rem;
-    background: #00ffff;
-    letter-spacing: 1px;
-    position: relative;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
-    color: black;
-    border: 2px solid #00ffff;
-    text-wrap: nowrap;
-    box-shadow:
-        0 0 5px #00ffff,
-        0 0 15px #00ffff,
-        0 0 30px #00ffff,
-        inset 0 0 10px #00ffff;
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out;
 }
 .cyber-btn:hover{
-    color: #2200ff;
-    background: #00ffff;
+    color: black;
+    border-color: black;
+    background-color: #00fff7;
     box-shadow:
-        0 0 5px #00ffff,
-        0 0 10px #00ffff,
-        0 0 15px #00ffff,
-        0 0 20px #00ffff;
-    transform: translateY(-3px);
+        0 0 0.5rem #00fff7,
+        0 0 1.5rem #00fff7,
+        0 0 2.5rem #00fff7,
+        0 0 5rem #00fff7;
+    transform: translateY(-0.6rem);
 }
 .cyber-btn:active{
-    transform: scale(0.95);
+    transform: scale(1.1);
 }
 /* ===========================SECTION===================================*/
 section{
@@ -130,16 +133,14 @@ section{
     padding: 10rem 15%;
     background-color: rgba(0, 0, 0, 0.3);
 }
-
 body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 10rem 10%;
+    padding: 10rem clamp(1.5rem, 5vw, 10%);
     background:
         linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url("image/bg9.png");
-
+        url("image/bg2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,16 +151,16 @@ body{
 /* ===========================PROJECT===================================*/
 .project{
     width: 100%;
-    width: 1300px;
+    max-width: 1300px;
     background-color: black;
     color:white;
     border:2px solid #00fff7;
-    border-radius:70px;
+    border-radius: clamp(2.5rem, 5vw, 70px);
     box-shadow:
         0 0 10px #00fff7,
         0 0 25px #00fff7,
         0 0 50px #00fff7;
-    padding: 7rem;
+    padding: clamp(2.5rem, 5vw, 7rem);
 }
 .project-top{
     display:flex;
@@ -169,13 +170,13 @@ body{
     flex-wrap:wrap;
 }
 .project-left{
-    flex:1;
-    width:600px;
+    flex:1 1 40rem;
+    min-width:0;
 }
 .project-right{
-    flex:1;
+    flex:1 1 40rem;
+    min-width:0;
     padding-top: 4rem;
-    width:600px;
 }
 .project-right video{
     width:100%;
@@ -186,11 +187,22 @@ body{
     font-size:3.5rem;
     text-align:center;
     margin:15px 0 35px;
+    text-shadow:
+        0 0 10px #00ffff,
+        0 0 25px #00ffff,
+        0 0 50px #00ffff;
 }
-.project-left h4{
+.project-left h3{
     font-size:2rem;
 }
+.project-left span{
+    color: white;
+    font-family: "Oxanium", sans-serif;
+}
 .info-row{
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
     display:flex;
     align-items:flex-start;
     gap:20px;
@@ -203,7 +215,6 @@ body{
     font-size: 2rem;
     font-family: "Oxanium", sans-serif;
 }
-
 .tech-tags{
     display:flex;
     flex-wrap:wrap;
@@ -249,7 +260,7 @@ body{
     padding-top: 1rem;
 }
 .language{
-    margin-top: 18px;
+    margin-top: 2rem;
     margin-bottom: 18px;
     width: 100%;
     display: flex;
@@ -292,48 +303,13 @@ body{
 }
 .video-container iframe {
     width: 100%;
+    height: auto;
     aspect-ratio: 16 / 9;
     border: 3px solid #00fff7;
     border-radius: 20px;
     box-shadow:
         0 0 10px #00fff7,
         0 0 20px rgba(0, 255, 247, 0.4);
-}
-/* =============================FOOTER===================================*/
-.footer{
-    width: 100%;
-    background-color: #000000;
-    backdrop-filter: blur(10px);
-}
-.footer .social-icons{
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding-left: 2rem;
-}
-.footer ul{
-    text-align: center;
-    font-size: 1.8rem;
-}
-.footer ul li{
-    display: inline-block;
-    margin-left: 15px;
-    margin-bottom: 3rem;
-}
-.footer ul li a{
-    color: white;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease-in-out;
-}
-.footer ul li a:hover{
-    border-bottom: 3px solid #00fff7;
-}
-.footer .copyright{
-    text-align:center;
-    margin-top: 5px;
-    font-size: 16px;
-    color: white;
-    margin-bottom: 3rem;
 }
 .mission-card{
     width:100%;
@@ -398,7 +374,6 @@ body{
         width:100%;
     }
 }
-
 .mission-btn{
     display:inline-block;
     padding:10px 18px;
@@ -427,7 +402,83 @@ body{
         opacity:.4;
     }
 }
-/* ================================================================*/
+/* =================== PHONE =================== */
+@media (max-width: 560px){
+    .project-left h1{
+        font-size: 2.6rem;
+        margin: 10px 0 25px;
+    }
+    .label,
+    .difficulty,
+    .reward,
+    .reward p,
+    .objective h3,
+    .objective p,
+    .language span{
+        font-size: 1.7rem;
+    }
+    .label{
+        min-width: 0;
+    }
+    .info-row{
+        flex-direction: column;
+        gap: 6px;
+    }
+    .objective p,
+    .reward p{
+        text-indent: 0;
+        line-height: 1.7;
+    }
+    .language span{
+        font-size: 1.3rem;
+    }
+}
+/* =================== TABLET =================== */
+@media (max-width: 900px) {
+    .achievements {
+        padding: 12rem 5%;
+    }
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    .achievement-trophy i {
+        font-size: 14rem;
+    }
+    .achievement-card {
+        grid-template-columns: auto 1fr;
+    }
+    .achievement-card span {
+        grid-column: 2;
+    }
+    .panel-body{
+        flex-direction: column;
+    }
+    .panel-image{
+        width: 140px;
+    }
+    .skills-content h1,
+    .stats-content h1{
+        font-size: 3rem;
+    }
+    .skillsnstats{
+        padding: 2rem;
+    }
+    .project-right{
+        padding-top: 0;
+    }
+    .project-left h1{
+        font-size: 3rem;
+    }
+    .info-row{
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .objective{
+        margin-top: 30px;
+    }
+}
+/* =================== BIG SCREEN =================== */
 @media(max-width:1285px){
     #menu-icon{
         display: block;
@@ -479,42 +530,3 @@ body{
         flex-direction: column;
     }
 }
-
-@media (max-width: 900px) {
-    .achievements {
-        padding: 12rem 5%;
-    }
-    .achievements-grid {
-        grid-template-columns: 1fr;
-    }
-    .achievement-trophy i {
-        font-size: 14rem;
-    }
-    .achievement-card {
-        grid-template-columns: auto 1fr;
-    }
-    .achievement-card span {
-        grid-column: 2;
-    }
-}
-
-@media (max-width: 900px){
-
-    .panel-body{
-        flex-direction: column;
-    }
-
-    .panel-image{
-        width: 140px;
-    }
-
-    .skills-content h1,
-    .stats-content h1{
-        font-size: 3rem;
-    }
-
-    .skillsnstats{
-        padding: 2rem;
-    }
-}
-
