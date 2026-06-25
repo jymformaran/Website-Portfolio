@@ -18,7 +18,7 @@ body{
 .charprof-content .btn{
     margin: 5rem 0;
 }
-
+ 
 ::-webkit-scrollbar{
     width: 20px;
 }
@@ -130,16 +130,16 @@ section{
     padding: 10rem 15%;
     background-color: rgba(0, 0, 0, 0.3);
 }
-
+ 
 body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 10rem 10%;
+    padding: 10rem clamp(1.5rem, 5vw, 10%);
     background:
         linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
         url("image/bg9.png");
-
+ 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,16 +150,16 @@ body{
 /* ===========================PROJECT===================================*/
 .project{
     width: 100%;
-    width: 1300px;
+    max-width: 1300px;
     background-color: black;
     color:white;
     border:2px solid #00fff7;
-    border-radius:70px;
+    border-radius: clamp(2.5rem, 5vw, 70px);
     box-shadow:
         0 0 10px #00fff7,
         0 0 25px #00fff7,
         0 0 50px #00fff7;
-    padding: 7rem;
+    padding: clamp(2.5rem, 5vw, 7rem);
 }
 .project-top{
     display:flex;
@@ -169,13 +169,13 @@ body{
     flex-wrap:wrap;
 }
 .project-left{
-    flex:1;
-    width:600px;
+    flex:1 1 40rem;
+    min-width:0;
 }
 .project-right{
-    flex:1;
+    flex:1 1 40rem;
+    min-width:0;
     padding-top: 4rem;
-    width:600px;
 }
 .project-right video{
     width:100%;
@@ -186,11 +186,22 @@ body{
     font-size:3.5rem;
     text-align:center;
     margin:15px 0 35px;
+    text-shadow:
+        0 0 10px #00ffff,
+        0 0 25px #00ffff,
+        0 0 50px #00ffff;
 }
-.project-left h4{
+.project-left h3{
     font-size:2rem;
 }
+.project-left span{
+    color: white;
+    font-family: "Oxanium", sans-serif;
+}
 .info-row{
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
     display:flex;
     align-items:flex-start;
     gap:20px;
@@ -203,7 +214,7 @@ body{
     font-size: 2rem;
     font-family: "Oxanium", sans-serif;
 }
-
+ 
 .tech-tags{
     display:flex;
     flex-wrap:wrap;
@@ -249,7 +260,7 @@ body{
     padding-top: 1rem;
 }
 .language{
-    margin-top: 18px;
+    margin-top: 2rem;
     margin-bottom: 18px;
     width: 100%;
     display: flex;
@@ -292,48 +303,13 @@ body{
 }
 .video-container iframe {
     width: 100%;
+    height: auto;
     aspect-ratio: 16 / 9;
     border: 3px solid #00fff7;
     border-radius: 20px;
     box-shadow:
         0 0 10px #00fff7,
         0 0 20px rgba(0, 255, 247, 0.4);
-}
-/* =============================FOOTER===================================*/
-.footer{
-    width: 100%;
-    background-color: #000000;
-    backdrop-filter: blur(10px);
-}
-.footer .social-icons{
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding-left: 2rem;
-}
-.footer ul{
-    text-align: center;
-    font-size: 1.8rem;
-}
-.footer ul li{
-    display: inline-block;
-    margin-left: 15px;
-    margin-bottom: 3rem;
-}
-.footer ul li a{
-    color: white;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease-in-out;
-}
-.footer ul li a:hover{
-    border-bottom: 3px solid #00fff7;
-}
-.footer .copyright{
-    text-align:center;
-    margin-top: 5px;
-    font-size: 16px;
-    color: white;
-    margin-bottom: 3rem;
 }
 .mission-card{
     width:100%;
@@ -398,7 +374,7 @@ body{
         width:100%;
     }
 }
-
+ 
 .mission-btn{
     display:inline-block;
     padding:10px 18px;
@@ -479,7 +455,7 @@ body{
         flex-direction: column;
     }
 }
-
+ 
 @media (max-width: 900px) {
     .achievements {
         padding: 12rem 5%;
@@ -497,24 +473,73 @@ body{
         grid-column: 2;
     }
 }
-
+ 
 @media (max-width: 900px){
-
+ 
     .panel-body{
         flex-direction: column;
     }
-
+ 
     .panel-image{
         width: 140px;
     }
-
+ 
     .skills-content h1,
     .stats-content h1{
         font-size: 3rem;
     }
-
+ 
     .skillsnstats{
         padding: 2rem;
     }
 }
-
+ 
+/* =================== PROJECT PAGE — TABLET =================== */
+@media (max-width: 900px){
+    .project-right{
+        padding-top: 0;
+    }
+    .project-left h1{
+        font-size: 3rem;
+    }
+    .info-row{
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .objective{
+        margin-top: 30px;
+    }
+}
+ 
+/* =================== PROJECT PAGE — PHONE =================== */
+@media (max-width: 560px){
+    .project-left h1{
+        font-size: 2.6rem;
+        margin: 10px 0 25px;
+    }
+    .label,
+    .difficulty,
+    .reward,
+    .reward p,
+    .objective h3,
+    .objective p,
+    .language span{
+        font-size: 1.7rem;
+    }
+    .label{
+        min-width: 0;
+    }
+    .info-row{
+        flex-direction: column;
+        gap: 6px;
+    }
+    .objective p,
+    .reward p{
+        text-indent: 0;
+        line-height: 1.7;
+    }
+    .language span{
+        font-size: 1.3rem;
+    }
+}

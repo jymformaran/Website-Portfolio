@@ -731,7 +731,7 @@ section{
 .techs-content{
     width: 100%;
     max-width: 1350px;
-    height: 18rem;
+    padding-bottom: 1.5rem;
     padding-top: 1.5rem;
     overflow: hidden;
     box-sizing: border-box;
@@ -880,7 +880,7 @@ section{
 /* ========================= IMAGE ========================= */
 .project-card img{
     width: 100%;
-    aspect-ratio: 14 / 9; /* requested ratio */
+    aspect-ratio: 14 / 9;
     object-fit: cover;
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -1155,6 +1155,7 @@ section{
     display: flex;
     justify-content: center;
 }
+
 .footer ul{
     text-align: center;
     font-size: 1.8rem;
@@ -1401,9 +1402,7 @@ section{
         width: 16rem;
         margin-bottom: 3rem;
     }
-    
 }
-
 /* ===================== SSTS ===================== */
 @media (max-width: 992px){
     .ssts{
