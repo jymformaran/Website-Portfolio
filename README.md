@@ -1,1 +1,1 @@
-A cyberpunk-inspired portfolio website that transforms my skills and projects into an immersive digital experience. Featuring responsive design, animated UI, interactive project cards, and a futuristic aesthetic, this portfolio highlights my work in web development, programming, and creative design.
+Hi, I'm Joel Formaran. This is my personal portfolio website showcasing my projects, technical skills, certifications, and journey as a Computer Engineering Technology graduate passionate about web development, software engineering, and continuous learning.
