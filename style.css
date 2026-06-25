@@ -1215,6 +1215,7 @@ section{
     }
     .character-status{
         max-width: 100%;
+        min-width: 0;
     }
     .charprof-content p{
         text-align: left;
@@ -1244,6 +1245,10 @@ section{
     .panel-image2{
         width: 8rem;
     }
+    .panel-image2 img{
+        width: 20rem;
+    }
+    
     .tech-card{
         width: 14rem;
         height: 14rem;
@@ -1413,6 +1418,7 @@ section{
         overflow: hidden;
     }
     .stats-content{
+        overflow: hidden;
         width: 100%;
         min-height: 28rem;
         padding: 1.5rem 2rem;
